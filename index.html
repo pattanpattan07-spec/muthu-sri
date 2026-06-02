@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sri Muthu ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Georgia',serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1a1a2e,#16213e,#533483,#8e44ad);
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Background Text */
+.background-text{
+    position:fixed;
+    inset:0;
+    z-index:0;
+    color:rgba(255,255,255,0.18);
+    font-size:15px;
+    font-weight:bold;
+    line-height:32px;
+    letter-spacing:2px;
+    white-space:pre-wrap;
+    padding:15px;
+    pointer-events:none;
+    user-select:none;
+}
+
+/* Floating Emojis */
+.floating{
+    position:fixed;
+    font-size:28px;
+    animation:float 10s linear infinite;
+    z-index:1;
+}
+
+.f1{left:5%; animation-delay:0s;}
+.f2{left:20%; animation-delay:2s;}
+.f3{left:40%; animation-delay:4s;}
+.f4{left:60%; animation-delay:1s;}
+.f5{left:80%; animation-delay:3s;}
+.f6{left:92%; animation-delay:5s;}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+}
+
+/* Main Card */
+.container{
+    width:90%;
+    max-width:950px;
+    background:rgba(255,255,255,0.95);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    position:relative;
+    z-index:5;
+    box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
+
+/* Countdown */
+.countdown{
+    background:linear-gradient(45deg,#ff6b6b,#ff9f43);
+    color:white;
+    padding:15px;
+    border-radius:15px;
+    margin-bottom:25px;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+.birthday-title{
+    font-size:3.3rem;
+    color:#6a0572;
+    font-weight:bold;
+    letter-spacing:3px;
+    text-shadow:2px 2px 10px rgba(0,0,0,0.15);
+    margin-bottom:15px;
+}
+
+.emoji-line{
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+.photo-frame{
+    width:340px;
+    height:340px;
+    margin:25px auto;
+    border-radius:25px;
+    overflow:hidden;
+    border:8px solid #8e44ad;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.photo-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.message{
+    margin-top:20px;
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#333;
+}
+
+.love-notes{
+    margin-top:35px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    gap:18px;
+}
+
+.note{
+    background:linear-gradient(135deg,#ffeaa7,#fab1a0);
+    padding:18px;
+    border-radius:18px;
+    color:#4a235a;
+    font-weight:bold;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+.footer{
+    margin-top:35px;
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#6a0572;
+}
+
+@media(max-width:700px){
+
+    .birthday-title{
+        font-size:2.2rem;
+    }
+
+    .photo-frame{
+        width:250px;
+        height:250px;
+    }
+
+    .countdown{
+        font-size:1rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Text -->
+<div class="background-text">
+
+</div>
+
+<!-- Floating Emojis -->
+<div class="floating f1">❤️</div>
+<div class="floating f2">🎂</div>
+<div class="floating f3">🎉</div>
+<div class="floating f4">💖</div>
+<div class="floating f5">🎈</div>
+<div class="floating f6">🌹</div>
+
+<div class="container">
+
+    <!-- Countdown -->
+    <div class="countdown">
+        🎂 Birthday Celebration Begins In:
+        <span id="countdown">Loading...</span>
+    </div>
+
+    <div class="emoji-line">
+        🎉 🎂 🎈 ❤️ 💖 🌹 ✨ 🎁 🥳 🎊
+    </div>
+
+    <h1 class="birthday-title">
+        HAPPY BIRTHDAY <br>
+        SRI MUTHU
+    </h1>
+
+    <div class="photo-frame">
+        <img src="c:\Users\hp\Downloads\muthu 2.jpeg" alt="Sri Muthu">
+    </div>
+
+    <div class="message">
+        May your special day be filled with happiness, beautiful surprises,
+        endless smiles, unforgettable memories, and all the love your heart can hold.
+        You deserve every wonderful thing life has to offer. ❤️✨
+    </div>
+
+    <div class="love-notes">
+
+        <div class="note">
+            ❤️ Every moment with you feels like a beautiful blessing.
+        </div>
+
+        <div class="note">
+            🌹 Your smile can brighten even the darkest day.
+        </div>
+
+        <div class="note">
+            💖 You make ordinary moments feel extraordinary.
+        </div>
+
+        <div class="note">
+            ✨ Wishing you endless happiness and success.
+        </div>
+
+        <div class="note">
+            🎂 Another year of wonderful memories begins today.
+        </div>
+
+        <div class="note">
+            🥰 You deserve all the love and joy in the world.
+        </div>
+
+        <div class="note">
+            💕 Every heartbeat carries a special wish for your happiness.
+        </div>
+
+        <div class="note">
+            🌟 May your dreams shine brighter than the stars.
+        </div>
+
+        <div class="note">
+            💝 You are truly special and deeply cherished.
+        </div>
+
+        <div class="note">
+            🌹 Thank you for bringing happiness wherever you go.
+        </div>
+
+        <div class="note">
+            ❤️ Some people make life beautiful just by being in it.
+        </div>
+
+        <div class="note">
+            ✨ May today be as wonderful and lovely as your heart.
+        </div>
+
+        <div class="note">
+            💖 Forever grateful for your kindness, warmth, and smile.
+        </div>
+
+        <div class="note">
+            🎉 Celebrate today because you are amazing and loved.
+        </div>
+
+    </div>
+
+    <div class="footer">
+        ❤️ Forever Luv You Sri ❤️
+    </div>
+
+</div>
+
+<script>
+// Set Birthday Date Here
+const birthday = new Date("2026-06-03 00:00:00").getTime();
+
+setInterval(function(){
+
+    const now = new Date().getTime();
+    const distance = birthday - now;
+
+    const days = Math.floor(distance/(1000*60*60*24));
+    const hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+    const minutes = Math.floor((distance%(1000*60*60))/(1000*60));
+    const seconds = Math.floor((distance%(1000*60))/1000);
+
+    document.getElementById("countdown").innerHTML =
+        days+" Days "+
+        hours+" Hours "+
+        minutes+" Minutes "+
+        seconds+" Seconds";
+
+},1000);
+</script>
+
+</body>
+</html>
